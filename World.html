@@ -1,0 +1,57 @@
+<!--Xiaohua Huo-->
+<!--xhuo3@ucsc.edu-->
+<!--Thank you-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Change a point color</title>
+  </head>
+  
+  <body onload="main()">
+    <div id="canvasContainer" style="position: relative; width: 800px; height: 800px;">
+      <canvas id="webgl" width="800" height="800">
+      Please use a browser that supports "canvas"
+      </canvas>
+
+      <div id="crosshair" style="
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 10px;
+        height: 10px;
+        margin-left: -5px;
+        margin-top: -5px;
+        border: 1px solid black;
+        pointer-events: none;">
+      </div>
+    </div>
+
+    <p id="numdot"> XXX </p>
+    
+    Game Target is to find cat in the maze!
+    <p>
+    It's time to RAIN! (Wow) <button id="rainBtn">Toggle Rain</button>
+    <p>
+    Operations:
+    <p>
+    W, A, S, D to move(Forward, Left, Back, Right) and Q, E to rotate (Left, RIght)
+    <p>
+    Click M to enter the mouse control mode.
+    <p>
+    Mouse left click for adding block, right click for deleting block.
+
+    <script src="lib/webgl-utils.js"></script>
+    <script src="lib/webgl-debug.js"></script>
+    <script src="lib/cuon-utils.js"></script>
+    <script src="lib/cuon-matrix.js"></script>
+    <script src="Point.js"></script>
+    <script src="Triangle.js"></script>
+    <script src="Circle.js"></script>
+    <script src="Cube.js"></script>
+    <script src="Ear.js"></script>
+    <script src="Vector.js"></script>
+    <script src="Camera.js"></script>
+    <script src="World.js"></script>
+  </body>
+</html>
